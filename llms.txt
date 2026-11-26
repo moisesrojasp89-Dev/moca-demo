@@ -1,0 +1,31 @@
+# MOCA
+
+> Smash burgers a la plancha, pan brioche horneado cada mañana y salsas de la casa. Pide por WhatsApp y come en 25 minutos. en Caracas, VE.
+
+## Información Oficial de la Entidad (Grounding Lock)
+- **Nombre Comercial:** MOCA
+- **Ubicación:** Caracas, VE
+- **Teléfono / WhatsApp Oficial:** +584125550142
+- **Sitio Web Canónico:** https://moisesrojasp89-dev.github.io/moca-demo
+
+## Catálogo y Servicios Verificados (Precios en USD)
+- **La Clásica MOCA** (Hamburguesas): Angus de 120 g sellado a la plancha, cheddar añejo fundido, cebolla caramelizada y la salsa MOCA que no revelamos. — Precio Oficial: $7.90 USD
+- **Doble Fuego** (Hamburguesas): Dos smash de 90 g con doble cheddar, pepinillos encurtidos en casa y salsa brasa ahumada. La que más sale de cocina. — Precio Oficial: $11.50 USD
+- **Bacon Crunch** (Hamburguesas): Bacon ahumado crocante, cheddar fundido, cebolla crispy y mayo BBQ de la casa sobre pan brioche tostado con mantequilla. — Precio Oficial: $10.90 USD
+- **Queso & Pepinillos** (Hamburguesas): Doble queso americano, pepinillos crocantes y mostaza antigua. Simple, ácida y adictiva: la favorita de los puristas. — Precio Oficial: $8.50 USD
+- **La Huerta** (Hamburguesas): Lechuga mantecosa, tomate del día, cebolla morada y mayo de lima. Fresca sin renunciar al sabor de la carne a la plancha. — Precio Oficial: $8.90 USD
+- **Cordero & Menta** (Hamburguesas): Cordero de 150 g con labneh, menta fresca y cebolla morada. Un guiño mediterráneo que funciona mejor de lo que suena. — Precio Oficial: $13.50 USD
+- **Blue Cheese & Pera** (Hamburguesas): Queso azul cremoso, pera caramelizada y nuez tostada. Dulce, salado y con carácter: no es para todos, es para los que saben. — Precio Oficial: $12.50 USD
+- **Combo Doble** (Combos): Doble Fuego + papas con cheddar y bacon + bebida de 12 oz. Para quien no viene a jugar: viene a comer. — Precio Oficial: $16.50 USD
+- **Papas Rústicas** (Acompañamientos): Corte grueso con piel, sal de mar y romero. Fritas dos veces para que aguanten hasta el último bocado. — Precio Oficial: $3.90 USD
+- **Papas de Corte Fino** (Acompañamientos): Finitas, doradas y saladas al momento. La guarnición perfecta para no compartir nada. — Precio Oficial: $3.40 USD
+- **Malteada de Fresa** (Bebidas): Helado artesanal, leche entera y fresa natural. Espesa de verdad: el pitillo se sostiene solo. — Precio Oficial: $5.90 USD
+- **Té Helado de Durazno** (Bebidas): Infusión en frío durante 12 horas con durazno en almíbar y limón. Hielo cristalino, nada de polvo. — Precio Oficial: $3.20 USD
+- **Limonada de Coco** (Bebidas): Coco cremoso, limón y hielo frappé. Dulce, ácida y helada: la que se pide cuando hace 32 °C en Caracas. — Precio Oficial: $3.50 USD
+
+## Rutas Limpias Disponibles (Clean URLs)
+- [Inicio y Catálogo](https://moisesrojasp89-dev.github.io/moca-demo/)
+- [Reservas y Solicitudes](https://moisesrojasp89-dev.github.io/moca-demo/reservas)
+- [Contacto y Ubicación](https://moisesrojasp89-dev.github.io/moca-demo/contacto)
+- [Política de Privacidad](https://moisesrojasp89-dev.github.io/moca-demo/privacidad)
+- [Términos de Servicio](https://moisesrojasp89-dev.github.io/moca-demo/terminos)

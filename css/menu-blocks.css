@@ -1,0 +1,258 @@
+/* ===== Bento Promo Split: dos tarjetas de alto contraste ===== */
+.combo-hero {
+  position: relative;
+  padding-block: var(--space-8);
+  background-color: var(--surface-paper);
+  color: var(--text-on-paper);
+  border-top: 1px solid color-mix(in srgb, var(--text-on-paper) 10%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-paper) 10%, transparent);
+  overflow: clip;
+}
+.bento-promo-split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); }
+.bento-promo-card,
+.combo-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--space-5);
+  align-items: center;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  min-width: 0;
+}
+.bento-promo-card--ink {
+  background-color: var(--surface-ink);
+  color: var(--text-on-dark);
+  border: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
+}
+.bento-promo-card--warm {
+  background-color: var(--surface-warm);
+  color: var(--text-on-paper);
+  border: 1px solid color-mix(in srgb, var(--text-on-paper) 10%, transparent);
+}
+.bento-promo-copy,
+.combo-hero-copy { display: grid; gap: var(--space-3); align-content: center; justify-items: start; min-width: 0; }
+.bento-promo-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+.bento-promo-title,
+.combo-hero-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-display-sm);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.bento-promo-card--ink .bento-promo-title { color: var(--text-on-dark); }
+.bento-promo-card--warm .bento-promo-title { color: var(--text-on-paper); }
+.bento-promo-desc,
+.combo-hero-desc { margin: 0; max-width: 38ch; font-family: var(--font-sans); font-size: var(--step--1); line-height: 1.55; }
+.bento-promo-card--ink .bento-promo-desc { color: var(--text-muted-on-ink); }
+.bento-promo-card--warm .bento-promo-desc { color: var(--text-muted-on-paper); }
+.bento-promo-foot,
+.combo-hero-foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-4); margin-top: var(--space-2); }
+.bento-promo-price,
+.combo-hero-price { font-family: var(--font-display); font-size: var(--step-2); font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.bento-promo-card--ink .bento-promo-price { color: var(--accent-primary); }
+.bento-promo-card--warm .bento-promo-price { color: var(--text-on-paper); }
+.bento-promo-card--warm .btn-outline { color: var(--text-on-paper); border-color: color-mix(in srgb, var(--text-on-paper) 34%, transparent); }
+.bento-promo-card--warm .btn-outline:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+.bento-promo-media,
+.combo-hero-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--surface-ink-card);
+  border: 1px solid color-mix(in srgb, var(--text-on-dark) 12%, transparent);
+}
+.bento-promo-media img,
+.combo-hero-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 360ms var(--ease-out); }
+.bento-promo-card:hover .bento-promo-media img { transform: scale(1.04); }
+.bento-promo-badge,
+.combo-hero-badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background-color: var(--accent-primary);
+  color: var(--text-on-accent);
+  font-family: var(--font-sans);
+  font-size: var(--text-2xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== Quiénes somos (superficie Paper) ===== */
+.manifesto { background-color: var(--surface-paper); color: var(--text-on-paper); padding-block: var(--space-8); }
+.manifesto-inner { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: var(--space-8); align-items: center; }
+.manifesto-visual {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--surface-ink-card);
+  border: 1px solid color-mix(in srgb, var(--text-on-paper) 12%, transparent);
+}
+.manifesto-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.manifesto-visual::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 50%;
+  background: linear-gradient(to top, color-mix(in srgb, var(--surface-ink) 88%, transparent) 0%, transparent 100%);
+  pointer-events: none;
+}
+.manifesto-visual-caption { position: absolute; left: var(--space-4); right: var(--space-4); bottom: var(--space-4); z-index: 2; display: grid; gap: var(--space-1); margin: 0; }
+.manifesto-visual-caption span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+.manifesto-visual-caption strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 800; line-height: 1.05; color: var(--text-on-dark); }
+.manifesto-side { display: grid; gap: var(--space-4); justify-items: start; min-width: 0; }
+.manifesto-eyebrow {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+.manifesto-quote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-display-sm);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--text-on-paper);
+  text-wrap: balance;
+}
+.manifesto-body { margin: 0; max-width: 52ch; font-family: var(--font-sans); font-size: var(--step--1); line-height: 1.6; color: var(--text-muted-on-paper); }
+.manifesto-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  width: 100%;
+  margin: 0;
+  padding-block: var(--space-4);
+  border-top: 1px solid color-mix(in srgb, var(--text-on-paper) 12%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--text-on-paper) 12%, transparent);
+}
+.manifesto-stats div { display: grid; gap: var(--space-1); align-content: start; min-width: 0; }
+.manifesto-stats dt { font-family: var(--font-sans); font-size: var(--text-2xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted-on-paper); }
+.manifesto-stats dd { margin: 0; font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 600; line-height: 1.4; color: var(--text-on-paper); }
+.manifesto-side .btn-outline { color: var(--text-on-paper); border-color: color-mix(in srgb, var(--text-on-paper) 30%, transparent); }
+.manifesto-side .btn-outline:hover { border-color: var(--accent-primary); color: var(--accent-primary); }
+
+/* ===== Reseñas compactas en 3 tarjetas (superficie Warm) ===== */
+.review-band { background-color: var(--surface-warm); color: var(--text-on-paper); padding-block: var(--space-8); }
+.review-band .container,
+.review-inner { display: grid; gap: var(--space-5); }
+.review-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.review-head .section-title { color: var(--text-on-paper); }
+.review-sub { margin: 0; font-family: var(--font-sans); font-size: var(--step--1); color: var(--text-muted-on-paper); }
+.review-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); }
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-paper-card);
+  border: 1px solid color-mix(in srgb, var(--text-on-paper) 10%, transparent);
+  box-shadow: var(--shadow-card);
+}
+.review-stars { display: inline-flex; align-items: center; gap: var(--space-1); color: var(--accent-primary); }
+.review-stars svg { fill: currentColor; }
+.review-quote { margin: 0; font-family: var(--font-sans); font-size: var(--text-sm); line-height: 1.5; color: var(--text-on-paper); }
+.review-author { margin: auto 0 0; font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted-on-paper); }
+
+/* ===== Cierre compacto con acordeón de objeciones (superficie Paper) ===== */
+.offer-strong { font-weight: 800; }
+.close-band {
+  background-color: var(--surface-paper);
+  color: var(--text-on-paper);
+  border-top: 1px solid color-mix(in srgb, var(--text-on-paper) 10%, transparent);
+  padding-block: var(--space-8);
+}
+.close-inner { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: var(--space-6) var(--space-8); align-items: start; }
+.close-copy { display: grid; gap: var(--space-3); justify-items: start; min-width: 0; }
+.close-kicker {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+.close-title { margin: 0; font-family: var(--font-display); font-size: var(--text-display-sm); font-weight: 800; line-height: 1.04; letter-spacing: -0.02em; color: var(--text-on-paper); }
+.close-note { margin: 0; max-width: 44ch; font-family: var(--font-sans); font-size: var(--step--1); line-height: 1.55; color: var(--text-muted-on-paper); }
+.close-cta { margin-top: var(--space-2); }
+.close-faq { display: grid; gap: var(--space-2); min-width: 0; }
+.close-faq-item {
+  background-color: var(--surface-paper-card);
+  color: var(--text-on-paper);
+  border: 1px solid color-mix(in srgb, var(--text-on-paper) 12%, transparent);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  transition: border-color var(--transition-fast);
+}
+.close-faq-item[open] { border-color: color-mix(in srgb, var(--accent-primary) 42%, transparent); }
+.close-faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--text-on-paper);
+}
+.close-faq-item summary::-webkit-details-marker { display: none; }
+.close-faq-item summary::after {
+  content: '+';
+  font-size: var(--text-md);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+.close-faq-item[open] summary::after { content: '−'; }
+.close-faq-item p { margin: var(--space-2) 0 0; font-family: var(--font-sans); font-size: var(--text-xs); line-height: 1.55; color: var(--text-muted-on-paper); }
+body:has(.poster-hero) .site-footer { margin-top: 0; }
+
+/* ===== Adaptación responsiva ===== */
+@media (max-width: 860px) {
+  .combo-hero, .manifesto, .review-band, .close-band { padding-block: var(--space-7); }
+  .bento-promo-split, .manifesto-inner, .review-grid, .close-inner { grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
+}
+@media (max-width: 640px) {
+  .manifesto-stats { grid-template-columns: minmax(0, 1fr); }
+  .bento-promo-card, .combo-hero-inner { grid-template-columns: minmax(0, 1fr); padding: var(--space-5); }
+  .bento-promo-media, .combo-hero-media { order: -1; }
+}
